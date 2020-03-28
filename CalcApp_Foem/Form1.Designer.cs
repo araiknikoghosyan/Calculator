@@ -39,6 +39,11 @@
             this.Fibo_button = new System.Windows.Forms.Button();
             this.Pow_button = new System.Windows.Forms.Button();
             this.Sqrt_Button = new System.Windows.Forms.Button();
+            this.CreatDvision_button = new System.Windows.Forms.Button();
+            this.Hex_button = new System.Windows.Forms.Button();
+            this.Hex_ = new System.Windows.Forms.Button();
+            this.Eightfold = new System.Windows.Forms.Button();
+            this.ConvertAll = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // textBox1
@@ -144,11 +149,66 @@
             this.Sqrt_Button.UseVisualStyleBackColor = true;
             this.Sqrt_Button.Click += new System.EventHandler(this.Sqrt_Button_Click);
             // 
+            // CreatDvision_button
+            // 
+            this.CreatDvision_button.Location = new System.Drawing.Point(16, 180);
+            this.CreatDvision_button.Name = "CreatDvision_button";
+            this.CreatDvision_button.Size = new System.Drawing.Size(75, 23);
+            this.CreatDvision_button.TabIndex = 11;
+            this.CreatDvision_button.Text = "CreatDvision";
+            this.CreatDvision_button.UseVisualStyleBackColor = true;
+            this.CreatDvision_button.Click += new System.EventHandler(this.CreatDvision_button_Click);
+            // 
+            // Hex_button
+            // 
+            this.Hex_button.Location = new System.Drawing.Point(109, 180);
+            this.Hex_button.Name = "Hex_button";
+            this.Hex_button.Size = new System.Drawing.Size(75, 23);
+            this.Hex_button.TabIndex = 12;
+            this.Hex_button.Text = "Binary";
+            this.Hex_button.UseVisualStyleBackColor = true;
+            this.Hex_button.Click += new System.EventHandler(this.Binary);
+            // 
+            // Hex_
+            // 
+            this.Hex_.Location = new System.Drawing.Point(190, 64);
+            this.Hex_.Name = "Hex_";
+            this.Hex_.Size = new System.Drawing.Size(75, 23);
+            this.Hex_.TabIndex = 13;
+            this.Hex_.Text = "Hex";
+            this.Hex_.UseVisualStyleBackColor = true;
+            this.Hex_.Click += new System.EventHandler(this.Hex__Click);
+            // 
+            // Eightfold
+            // 
+            this.Eightfold.Location = new System.Drawing.Point(190, 93);
+            this.Eightfold.Name = "Eightfold";
+            this.Eightfold.Size = new System.Drawing.Size(75, 23);
+            this.Eightfold.TabIndex = 14;
+            this.Eightfold.Text = "8";
+            this.Eightfold.UseVisualStyleBackColor = true;
+            this.Eightfold.Click += new System.EventHandler(this.Eightfold_Click);
+            // 
+            // ConvertAll
+            // 
+            this.ConvertAll.Location = new System.Drawing.Point(190, 121);
+            this.ConvertAll.Name = "ConvertAll";
+            this.ConvertAll.Size = new System.Drawing.Size(75, 23);
+            this.ConvertAll.TabIndex = 15;
+            this.ConvertAll.Text = "Convert";
+            this.ConvertAll.UseVisualStyleBackColor = true;
+            this.ConvertAll.Click += new System.EventHandler(this.ConvertAll_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(398, 225);
+            this.Controls.Add(this.ConvertAll);
+            this.Controls.Add(this.Eightfold);
+            this.Controls.Add(this.Hex_);
+            this.Controls.Add(this.Hex_button);
+            this.Controls.Add(this.CreatDvision_button);
             this.Controls.Add(this.Sqrt_Button);
             this.Controls.Add(this.Pow_button);
             this.Controls.Add(this.Fibo_button);
@@ -180,6 +240,11 @@
         private System.Windows.Forms.Button Fibo_button;
         private System.Windows.Forms.Button Pow_button;
         private System.Windows.Forms.Button Sqrt_Button;
+        private System.Windows.Forms.Button CreatDvision_button;
+        private System.Windows.Forms.Button Hex_button;
+        private System.Windows.Forms.Button Hex_;
+        private System.Windows.Forms.Button Eightfold;
+        private System.Windows.Forms.Button ConvertAll;
     }
 }
 

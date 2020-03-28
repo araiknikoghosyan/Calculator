@@ -24,6 +24,7 @@ namespace CalcApp_Foem
         static double Sum(double a, double b)
         {
             return a + b;
+
         }
 
         private void SumButton_Click(object sender, EventArgs e)
@@ -91,6 +92,65 @@ namespace CalcApp_Foem
         static double Sqrt(double d)
         {
             return Math.Sqrt(d);
+        }
+
+        static double CreatDivision(double a, double b)
+        {
+            return b == 0 ? a : CreatDivision(b, a % b);
+        }
+
+        private void CreatDvision_button_Click(object sender, EventArgs e)
+        {
+            label1.Text = Convert.ToString(CreatDivision(Convert.ToDouble(textBox1.Text), Convert.ToDouble(textBox2.Text)));
+        }
+        private void Binary(object sender, EventArgs e)
+        {
+            int i = Convert.ToInt32(textBox1.Text);
+            label1.Text = Convert.ToString(i, 2);
+        }
+
+        private void Hex__Click(object sender, EventArgs e)
+        {
+            int i = Convert.ToInt32(textBox1.Text);
+            label1.Text = Convert.ToString(i,16);
+
+        }
+
+        private void Eightfold_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (textBox1.Text != null)
+                {
+                    int i = Convert.ToInt32(textBox1.Text);
+                    label1.Text = Convert.ToString(i, 8);
+                }
+            }
+            catch 
+            {
+                MessageBox.Show("Заполните все поля");
+                
+            }
+            
+            
+        }
+
+        private void ConvertAll_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if (textBox1.Text != null&&textBox2.Text!=null) {
+                    int i = Convert.ToInt32(textBox1.Text);
+                    label1.Text = Convert.ToString(i, Convert.ToInt32(textBox2.Text));
+                }
+                
+            }
+            catch 
+            {
+
+                MessageBox.Show("Заполните все поля");
+            }
+           
         }
     }
 }
